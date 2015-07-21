@@ -2,3 +2,5 @@
 Ejecutar el siguiente comando en la consola de Nugget Packages para habilitar migraciones del proyecto
 Enable-Migrations -ContextProjectName SignalRAPI.Data -ContextTypeName SignalRAPI.Data.Contexts.CoursesContext -ProjectName SignalRAPI.Data -StartUpProject SignalRAPI.Web
 
+Ejecutar el siguiente comando en la consola de Nugget Packages para agregar la primera migración
+Add-Migration -Name FirstMigration -ProjectName SignalRAPI.Data
