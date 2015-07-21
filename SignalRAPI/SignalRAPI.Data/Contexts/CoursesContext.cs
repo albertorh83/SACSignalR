@@ -10,6 +10,12 @@ namespace SignalRAPI.Data.Contexts
 {
     public class CoursesContext : DbContext
     {
+
+        public CoursesContext()
+            : base("DefaultConnection")
+        {
+        }
+
         public DbSet<Course> Courses { get; set; }
 
         public DbSet<Student> Students { get; set; }
