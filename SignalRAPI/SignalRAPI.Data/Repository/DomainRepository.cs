@@ -6,6 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using SignalRAPI.Data.Contexts;
+using SignalRAPI.Data.Seedwork.UnitOfWorks;
 using SignalRAPI.Data.UnitOfWorks;
 
 namespace SignalRAPI.Data.Repository
@@ -14,9 +15,9 @@ namespace SignalRAPI.Data.Repository
     public class DomainRepository<T> where T : class
     {
 
-        private readonly CoursesUnitOfWork _coursesUnitOfWork;
+        private readonly IUnitOfWork _coursesUnitOfWork;
 
-        public DomainRepository(CoursesUnitOfWork coursesUnitOfWork)
+        public DomainRepository(IUnitOfWork coursesUnitOfWork)
         {
             this._coursesUnitOfWork = coursesUnitOfWork;
         }

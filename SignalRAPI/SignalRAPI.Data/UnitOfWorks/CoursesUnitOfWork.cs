@@ -6,10 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SignalRAPI.Data.Contexts;
+using SignalRAPI.Data.Seedwork.UnitOfWorks;
 
 namespace SignalRAPI.Data.UnitOfWorks
 {
-    public class CoursesUnitOfWork
+    public class CoursesUnitOfWork : IUnitOfWork
     {
         protected CoursesContext _coursesContext;
 

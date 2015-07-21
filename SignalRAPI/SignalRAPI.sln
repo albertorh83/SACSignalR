@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRAPI.Domain", "Signal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRAPI.Data", "SignalRAPI.Data\SignalRAPI.Data.csproj", "{346535C5-5958-40DF-AE4F-8DB89E91D45B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRAPI.AppServices", "SignalRAPI.AppServices\SignalRAPI.AppServices.csproj", "{E708462B-4999-432B-BA0B-537A09B4727E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRAPI.Data.Seedwork", "SignalRAPI.Data.Seedwork\SignalRAPI.Data.Seedwork.csproj", "{696A9B21-1F38-4E98-85C5-12E21244EE8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.Resources", "SignalR.Resources\SignalR.Resources.csproj", "{F287E33C-9C55-4021-BCF1-AEE22803B846}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,18 @@ Global
 		{346535C5-5958-40DF-AE4F-8DB89E91D45B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{346535C5-5958-40DF-AE4F-8DB89E91D45B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{346535C5-5958-40DF-AE4F-8DB89E91D45B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E708462B-4999-432B-BA0B-537A09B4727E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E708462B-4999-432B-BA0B-537A09B4727E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E708462B-4999-432B-BA0B-537A09B4727E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E708462B-4999-432B-BA0B-537A09B4727E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{696A9B21-1F38-4E98-85C5-12E21244EE8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696A9B21-1F38-4E98-85C5-12E21244EE8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696A9B21-1F38-4E98-85C5-12E21244EE8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{696A9B21-1F38-4E98-85C5-12E21244EE8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F287E33C-9C55-4021-BCF1-AEE22803B846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F287E33C-9C55-4021-BCF1-AEE22803B846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F287E33C-9C55-4021-BCF1-AEE22803B846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F287E33C-9C55-4021-BCF1-AEE22803B846}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
