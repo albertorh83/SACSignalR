@@ -60,7 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SignalRAPI.Data.Seedwork\SignalRAPI.Data.Seedwork.csproj">
-      <Project>{696a9b21-1f38-4e98-85c5-12e21244ee8a}</Project>
+      <Project>{ee2827c0-1fb1-449a-a7d1-5f1d4475a84c}</Project>
       <Name>SignalRAPI.Data.Seedwork</Name>
     </ProjectReference>
     <ProjectReference Include="..\SignalRAPI.Domain\SignalRAPI.Domain.csproj">

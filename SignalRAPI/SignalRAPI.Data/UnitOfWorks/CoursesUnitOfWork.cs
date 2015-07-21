@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SignalRAPI.Data.Contexts;
-using SignalRAPI.Data.Seedwork.UnitOfWorks;
+using SignalRAPI.Data.Seedwork.UnitOfWork;
 
 namespace SignalRAPI.Data.UnitOfWorks
 {
-    public class CoursesUnitOfWork : IUnitOfWork
+    public class CoursesUnitOfWork : IQueryableUnitOfWork
     {
         protected CoursesContext _coursesContext;
 
@@ -22,6 +22,11 @@ namespace SignalRAPI.Data.UnitOfWorks
         public void SaveChanges()
         {
             this._coursesContext.SaveChanges();
+        }
+
+        public void CancelChanges()
+        {
+            this._coursesContext.ChangeTracker.Entries().ToList().ForEach(r => r.State = EntityState.Unchanged);
         }
 
         public DbSet<T> GetSet<T>() where T : class

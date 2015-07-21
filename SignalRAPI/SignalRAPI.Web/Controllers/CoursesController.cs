@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using SignalRAPI.AppServices;
+using SignalRAPI.AppServices.CoursesAppServices;
 using SignalRAPI.Data.Contexts;
 using SignalRAPI.Data.Repositories;
 using SignalRAPI.Data.UnitOfWorks;

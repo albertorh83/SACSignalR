@@ -264,11 +264,11 @@
       <Name>SignalR.Resources</Name>
     </ProjectReference>
     <ProjectReference Include="..\SignalRAPI.AppServices\SignalRAPI.AppServices.csproj">
-      <Project>{e708462b-4999-432b-ba0b-537a09b4727e}</Project>
+      <Project>{6439108c-29e7-4deb-bb39-de3e6ced68ca}</Project>
       <Name>SignalRAPI.AppServices</Name>
     </ProjectReference>
     <ProjectReference Include="..\SignalRAPI.Data.Seedwork\SignalRAPI.Data.Seedwork.csproj">
-      <Project>{696a9b21-1f38-4e98-85c5-12e21244ee8a}</Project>
+      <Project>{ee2827c0-1fb1-449a-a7d1-5f1d4475a84c}</Project>
       <Name>SignalRAPI.Data.Seedwork</Name>
     </ProjectReference>
     <ProjectReference Include="..\SignalRAPI.Data\SignalRAPI.Data.csproj">
