@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRAPI.Web", "SignalRAP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRAPI.Domain", "SignalRAPI.Domain\SignalRAPI.Domain.csproj", "{5CCF1514-9891-4148-A78B-450B5185A1BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRAPI.Data", "SignalRAPI.Data\SignalRAPI.Data.csproj", "{346535C5-5958-40DF-AE4F-8DB89E91D45B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5CCF1514-9891-4148-A78B-450B5185A1BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CCF1514-9891-4148-A78B-450B5185A1BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CCF1514-9891-4148-A78B-450B5185A1BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{346535C5-5958-40DF-AE4F-8DB89E91D45B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{346535C5-5958-40DF-AE4F-8DB89E91D45B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{346535C5-5958-40DF-AE4F-8DB89E91D45B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{346535C5-5958-40DF-AE4F-8DB89E91D45B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
