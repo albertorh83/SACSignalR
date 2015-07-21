@@ -46,8 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CoursesAdministration\CoursesAdministrationContext.cs" />
+    <Compile Include="Contexts\CoursesContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\DomainRepository.cs" />
+    <Compile Include="UnitOfWorks\CoursesUnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SignalRAPI.Domain\SignalRAPI.Domain.csproj">

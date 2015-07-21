@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using SignalRAPI.Domain.CoursesAdministration;
 
-namespace SignalRAPI.Data.CoursesAdministration
+namespace SignalRAPI.Data.Contexts
 {
-    public class CoursesAdministrationContext : DbContext
+    public class CoursesContext : DbContext
     {
         public DbSet<Course> Courses { get; set; }
 
