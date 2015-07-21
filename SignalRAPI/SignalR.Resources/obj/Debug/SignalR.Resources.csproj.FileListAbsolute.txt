@@ -1,0 +1,4 @@
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalR.Resources\bin\Debug\SignalR.Resources.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalR.Resources\bin\Debug\SignalR.Resources.pdb
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalR.Resources\obj\Debug\SignalR.Resources.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalR.Resources\obj\Debug\SignalR.Resources.pdb
