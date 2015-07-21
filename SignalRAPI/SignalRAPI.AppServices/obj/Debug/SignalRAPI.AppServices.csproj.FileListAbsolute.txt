@@ -2,11 +2,9 @@ C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\bin\Debug\A
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\bin\Debug\SignalRAPI.AppServices.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\bin\Debug\SignalRAPI.AppServices.pdb
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\bin\Debug\AutoMapper.dll
-C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\bin\Debug\SignalR.Resources.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\bin\Debug\SignalRAPI.Data.Seedwork.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\bin\Debug\SignalRAPI.Domain.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\bin\Debug\EntityFramework.dll
-C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\bin\Debug\SignalR.Resources.pdb
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\bin\Debug\SignalRAPI.Data.Seedwork.pdb
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\bin\Debug\SignalRAPI.Domain.pdb
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\bin\Debug\AutoMapper.pdb
@@ -16,3 +14,5 @@ C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\bin\Debug\E
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\obj\Debug\SignalRAPI.AppServices.csprojResolveAssemblyReference.cache
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\obj\Debug\SignalRAPI.AppServices.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\obj\Debug\SignalRAPI.AppServices.pdb
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\bin\Debug\SignalRAPI.Resources.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.AppServices\bin\Debug\SignalRAPI.Resources.pdb

@@ -1,0 +1,5 @@
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalR.Resources\bin\Release\SignalR.Resources.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalR.Resources\bin\Release\SignalR.Resources.pdb
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalR.Resources\obj\Release\SignalR.Resources.csprojResolveAssemblyReference.cache
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalR.Resources\obj\Release\SignalR.Resources.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalR.Resources\obj\Release\SignalR.Resources.pdb

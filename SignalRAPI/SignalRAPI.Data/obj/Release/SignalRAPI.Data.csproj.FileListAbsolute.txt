@@ -1,0 +1,16 @@
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Release\SignalRAPI.Data.dll.config
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Release\SignalRAPI.Data.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Release\SignalRAPI.Data.pdb
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Release\EntityFramework.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Release\EntityFramework.SqlServer.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Release\SignalRAPI.Data.Seedwork.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Release\SignalRAPI.Domain.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Release\SignalRAPI.Data.Seedwork.pdb
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Release\SignalRAPI.Domain.pdb
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Release\EntityFramework.xml
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Release\EntityFramework.SqlServer.xml
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\obj\Release\SignalRAPI.Data.csprojResolveAssemblyReference.cache
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\obj\Release\SignalRAPI.Data.Migrations.FirstMigration.resources
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\obj\Release\SignalRAPI.Data.csproj.GenerateResource.Cache
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\obj\Release\SignalRAPI.Data.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\obj\Release\SignalRAPI.Data.pdb

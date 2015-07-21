@@ -4,3 +4,6 @@ Enable-Migrations -ContextProjectName SignalRAPI.Data -ContextTypeName SignalRAP
 
 Ejecutar el siguiente comando en la consola de Nugget Packages para agregar la primera migración
 Add-Migration -Name FirstMigration -ProjectName SignalRAPI.Data
+
+Actualizar la base de datos
+Update-Database -ProjectName SignalRAPI.Data -TargetMigration FirstMigration

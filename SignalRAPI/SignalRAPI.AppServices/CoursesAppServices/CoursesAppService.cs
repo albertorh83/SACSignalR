@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using SignalR.Resources;
 using SignalRAPI.Data.Seedwork.Repository;
 using SignalRAPI.Domain.CoursesAdministration;
+using SignalRAPI.Resources;
 
 namespace SignalRAPI.AppServices.CoursesAppServices
 {

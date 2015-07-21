@@ -1,0 +1,10 @@
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data.Seedwork\bin\Release\SignalRAPI.Data.Seedwork.dll.config
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data.Seedwork\bin\Release\SignalRAPI.Data.Seedwork.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data.Seedwork\bin\Release\SignalRAPI.Data.Seedwork.pdb
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data.Seedwork\bin\Release\EntityFramework.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data.Seedwork\bin\Release\EntityFramework.SqlServer.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data.Seedwork\bin\Release\EntityFramework.xml
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data.Seedwork\bin\Release\EntityFramework.SqlServer.xml
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data.Seedwork\obj\Release\SignalRAPI.Data.Seedwork.csprojResolveAssemblyReference.cache
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data.Seedwork\obj\Release\SignalRAPI.Data.Seedwork.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data.Seedwork\obj\Release\SignalRAPI.Data.Seedwork.pdb

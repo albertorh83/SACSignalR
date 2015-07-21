@@ -1,4 +1,3 @@
-C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\obj\Debug\SignalRAPI.Web.csprojResolveAssemblyReference.cache
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\AutoMapper.Net4.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\SignalRAPI.Web.dll.config
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\SignalRAPI.Web.dll
@@ -22,7 +21,6 @@ C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\Microsoft.Owin.
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\Microsoft.Web.Infrastructure.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\Newtonsoft.Json.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\Owin.dll
-C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\SignalR.Resources.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\SignalRAPI.AppServices.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\SignalRAPI.Data.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\SignalRAPI.Data.Seedwork.dll
@@ -38,7 +36,6 @@ C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\System.Web.WebP
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\System.Web.WebPages.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\System.Web.WebPages.Razor.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\WebGrease.dll
-C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\SignalR.Resources.pdb
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\SignalRAPI.AppServices.pdb
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\SignalRAPI.Data.Seedwork.pdb
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\SignalRAPI.Data.pdb
@@ -72,5 +69,8 @@ C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\Microsoft.Owin.
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\Microsoft.Owin.Security.Google.xml
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\Microsoft.Owin.Security.Twitter.xml
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\obj\Debug\SignalRAPI.Web.csprojResolveAssemblyReference.cache
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\obj\Debug\SignalRAPI.Web.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\obj\Debug\SignalRAPI.Web.pdb
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\SignalRAPI.Resources.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\SignalRAPI.Resources.pdb

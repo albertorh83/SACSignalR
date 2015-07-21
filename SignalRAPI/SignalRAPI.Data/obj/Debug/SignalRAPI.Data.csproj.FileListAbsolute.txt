@@ -1,6 +1,3 @@
-C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\obj\Debug\SignalRAPI.Data.csprojResolveAssemblyReference.cache
-C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\obj\Debug\SignalRAPI.Data.Migrations.FirstMigration.resources
-C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\obj\Debug\SignalRAPI.Data.csproj.GenerateResource.Cache
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Debug\SignalRAPI.Data.dll.config
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Debug\SignalRAPI.Data.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Debug\SignalRAPI.Data.pdb
@@ -12,5 +9,8 @@ C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Debug\SignalRA
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Debug\SignalRAPI.Domain.pdb
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Debug\EntityFramework.xml
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\obj\Debug\SignalRAPI.Data.csprojResolveAssemblyReference.cache
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\obj\Debug\SignalRAPI.Data.Migrations.FirstMigration.resources
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\obj\Debug\SignalRAPI.Data.csproj.GenerateResource.Cache
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\obj\Debug\SignalRAPI.Data.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data\obj\Debug\SignalRAPI.Data.pdb

@@ -199,6 +199,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\signalrapi.sergioacortes.com.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -259,10 +260,6 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SignalR.Resources\SignalR.Resources.csproj">
-      <Project>{f287e33c-9c55-4021-bcf1-aee22803b846}</Project>
-      <Name>SignalR.Resources</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SignalRAPI.AppServices\SignalRAPI.AppServices.csproj">
       <Project>{6439108c-29e7-4deb-bb39-de3e6ced68ca}</Project>
       <Name>SignalRAPI.AppServices</Name>
@@ -278,6 +275,10 @@
     <ProjectReference Include="..\SignalRAPI.Domain\SignalRAPI.Domain.csproj">
       <Project>{5ccf1514-9891-4148-a78b-450b5185a1bf}</Project>
       <Name>SignalRAPI.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SignalRAPI.Resources\SignalRAPI.Resources.csproj">
+      <Project>{9aea6315-c075-4084-b883-31aaac583ba2}</Project>
+      <Name>SignalRAPI.Resources</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -1,0 +1,5 @@
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Domain\bin\Release\SignalRAPI.Domain.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Domain\bin\Release\SignalRAPI.Domain.pdb
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Domain\obj\Release\SignalRAPI.Domain.csprojResolveAssemblyReference.cache
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Domain\obj\Release\SignalRAPI.Domain.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Domain\obj\Release\SignalRAPI.Domain.pdb

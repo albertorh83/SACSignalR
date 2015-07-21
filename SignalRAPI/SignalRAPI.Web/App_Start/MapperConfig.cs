@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using AutoMapper;
-using SignalR.Resources;
+using SignalRAPI.Resources;
 using SignalRAPI.Domain.CoursesAdministration;
+using SignalRAPI.Resources;
 
 namespace SignalRAPI.Web
 {
