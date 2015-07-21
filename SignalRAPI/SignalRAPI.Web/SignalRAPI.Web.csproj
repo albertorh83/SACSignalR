@@ -169,6 +169,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -247,6 +248,28 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SignalR.Resources\SignalR.Resources.csproj">
+      <Project>{f287e33c-9c55-4021-bcf1-aee22803b846}</Project>
+      <Name>SignalR.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SignalRAPI.AppServices\SignalRAPI.AppServices.csproj">
+      <Project>{e708462b-4999-432b-ba0b-537a09b4727e}</Project>
+      <Name>SignalRAPI.AppServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SignalRAPI.Data.Seedwork\SignalRAPI.Data.Seedwork.csproj">
+      <Project>{696a9b21-1f38-4e98-85c5-12e21244ee8a}</Project>
+      <Name>SignalRAPI.Data.Seedwork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SignalRAPI.Data\SignalRAPI.Data.csproj">
+      <Project>{346535c5-5958-40df-ae4f-8db89e91d45b}</Project>
+      <Name>SignalRAPI.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SignalRAPI.Domain\SignalRAPI.Domain.csproj">
+      <Project>{5ccf1514-9891-4148-a78b-450b5185a1bf}</Project>
+      <Name>SignalRAPI.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
