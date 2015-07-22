@@ -24,8 +24,19 @@
 
             }
 
+            function createStudent(student) {
+                return $http.post(servicesUrl.signalRAPIUrl + 'api/students', student)
+                    .then(function (response) {
+                        return response.data;
+                    })
+                    .catch(function (error) {
+                        return error;
+                    });
+            }
+
             return {
-                getStudentsFromCourse: getStudentsFromCourse
+                getStudentsFromCourse: getStudentsFromCourse,
+                createStudent: createStudent
             };
 
         }

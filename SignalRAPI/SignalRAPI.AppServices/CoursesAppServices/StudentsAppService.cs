@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using SignalRAPI.Data.Seedwork.Repository;
@@ -26,6 +27,13 @@ namespace SignalRAPI.AppServices.CoursesAppServices
 
         }
 
+        public StudentResource GetStudent(Guid studentId)
+        {
+            var studentModel = this._studentsRepository.Get(studentId);
+            var studentResource = AutoMapper.Mapper.Map<Student, StudentResource>(studentModel);
+            return studentResource;
+        }
+
         public List<StudentResource> GetCourseStudents(Guid courseId)
         {
 
@@ -34,6 +42,33 @@ namespace SignalRAPI.AppServices.CoursesAppServices
 
             return studentsResource;
 
+        }
+
+        public StudentResource CreateStudent(StudentResource studentResource)
+        {
+
+            Student studentModel = AutoMapper.Mapper.Map<StudentResource, Student>(studentResource);
+            this._studentsRepository.Add(studentModel);
+            this._studentsRepository.SaveChanges();
+
+            return AutoMapper.Mapper.Map<Student, StudentResource>(studentModel);
+
+        }
+
+        public StudentResource UpdateStudent(StudentResource studentResource)
+        {
+            Student studentModel = AutoMapper.Mapper.Map<StudentResource, Student>(studentResource);
+            this._studentsRepository.Update(studentModel);
+            this._studentsRepository.SaveChanges();
+            return AutoMapper.Mapper.Map<Student, StudentResource>(studentModel);
+        }
+
+        public StudentResource DeleteStudent(Guid studentId)
+        {
+            var studentModel = this._studentsRepository.Get(studentId);
+            this._studentsRepository.Delete(studentModel);
+
+            return AutoMapper.Mapper.Map<Student, StudentResource>(studentModel);
         }
 
     }

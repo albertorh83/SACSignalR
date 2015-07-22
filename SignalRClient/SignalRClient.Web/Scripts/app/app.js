@@ -8,16 +8,26 @@
     './courses/controllers/courseController',
 
     './students/services/studentsService',
+    './students/services/studentModelService',
+    './students/controllers/studentController',
+    './students/controllers/studentCreateController',
+    './students/controllers/studentUpdateController',
 
     'ngRoute'
 ], function (
     $,
     angular,
+
     coursesService,
     courseModelService,
     coursesController,
     courseController,
-    studentsService) {
+
+    studentsService,
+    studentModelService,
+    studentController, 
+    studentCreateController, 
+    studentUpdateController) {
 
     var defaultConfig = {
         moduleName: 'SignalRClient'
@@ -29,6 +39,7 @@
         var module = angular.module(config.moduleName, ['ngRoute']);
 
         module.constant('servicesUrl', {
+            // signalRAPIUrl: 'http://localhost:55150/'
             signalRAPIUrl: 'http://signalrapi.sergioacortes.com/'
         });
 
@@ -38,6 +49,10 @@
         courseController(module, opts.courseControllerOptions || {});
 
         studentsService(module, opts.studentsServiceOptions || {});
+        studentModelService(module, opts.studentModelServiceOptions || {});
+        studentController(module, opts.studentControllerOptions || {});
+        studentCreateController(module, opts.studentCreateControllerOptions || {});
+        studentUpdateController(module, opts.studentUpdateControllerOptison || {});
 
         return module;
 

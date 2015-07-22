@@ -136,6 +136,10 @@
     <Content Include="Scripts\app\courses\controllers\coursesController.js" />
     <Content Include="Scripts\app\courses\services\courseModelService.js" />
     <Content Include="Scripts\app\courses\services\coursesService.js" />
+    <Content Include="Scripts\app\students\controllers\studentController.js" />
+    <Content Include="Scripts\app\students\controllers\studentCreateController.js" />
+    <Content Include="Scripts\app\students\controllers\studentUpdateController.js" />
+    <Content Include="Scripts\app\students\services\studentModelService.js" />
     <Content Include="Scripts\app\students\services\studentsService.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -143,6 +147,7 @@
     <Content Include="Scripts\angular-route.min.js.map" />
     <Content Include="Scripts\angular-resource.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\common\guid.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -173,12 +178,14 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Partials\CoursesPartial.cshtml" />
     <Content Include="Views\Home\Partials\CoursePartial.cshtml" />
+    <Content Include="Views\Home\Partials\Student.cshtml" />
+    <Content Include="Views\Home\Partials\StudentCreate.cshtml" />
+    <Content Include="Views\Home\Partials\StudentUpdate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Scripts\app\courses\directives\" />
-    <Folder Include="Scripts\app\students\controllers\" />
     <Folder Include="Scripts\app\students\directives\" />
   </ItemGroup>
   <ItemGroup>

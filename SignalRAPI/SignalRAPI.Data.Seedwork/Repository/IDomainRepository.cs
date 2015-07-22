@@ -14,6 +14,8 @@ namespace SignalRAPI.Data.Seedwork.Repository
         IQueryable<T> GetFiltered(Expression<Func<T, bool>> filterExpression);
         void Add(T entity);
         void Update(T entity);
+        void Delete(T entity);
+        void Delete(Guid entityId);
         void SaveChanges();
     }
 }

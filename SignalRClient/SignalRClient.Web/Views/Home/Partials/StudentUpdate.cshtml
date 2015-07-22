@@ -1,0 +1,54 @@
+﻿<div class="jumbotron">
+    <h1 data-ng-bind="studentUpdateController.title"></h1>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2 data-ng-bind="studentUpdateController.secondTitle"></h2>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-3">
+        <label for="firstName">First name</label>
+    </div>
+    <div class="col-md-9">
+        <input name="firstName" type="text" class="form-control" value="" data-ng-model="studentUpdateController.studentModel.firstName" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <label for="middleName">Middle name</label>
+    </div>
+    <div class="col-md-9">
+        <input name="middleName" type="text" class="form-control" value="" data-ng-model="studentUpdateController.studentModel.middleName" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <label for="lastName">Last name</label>
+    </div>
+    <div class="col-md-9">
+        <input name="lastName" type="text" class="form-control" value="" data-ng-model="studentUpdateController.studentModel.lastName" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <label for="alias">Alias</label>
+    </div>
+    <div class="col-md-9">
+        <input name="alias" type="text" class="form-control" value="" data-ng-model="studentUpdateController.studentModel.alias" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-9">
+        <input type="submit" value="Create" class="btn btn-default" data-ng-click="studentUpdateController.updateStudent()" />
+    </div>
+</div>

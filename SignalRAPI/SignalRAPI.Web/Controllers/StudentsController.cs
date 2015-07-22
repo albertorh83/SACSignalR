@@ -9,6 +9,7 @@ using SignalRAPI.AppServices.CoursesAppServices;
 using SignalRAPI.Data.Contexts;
 using SignalRAPI.Data.Repositories;
 using SignalRAPI.Data.UnitOfWorks;
+using SignalRAPI.Resources;
 using SignalRAPI.Web.Controllers.Helpers;
 
 namespace SignalRAPI.Web.Controllers
@@ -33,10 +34,42 @@ namespace SignalRAPI.Web.Controllers
         }
 
         [HttpGet]
+        [Route("{studentId}")]
+        public IHttpActionResult Get(Guid studentId)
+        {
+            var studentResource = this._studentsAppService.GetStudent(studentId);
+            return Ok(studentResource);
+        }
+
+        [HttpGet]
         [Route("Courses/{courseId}")]
-        public IHttpActionResult Get(Guid courseId)
+        public IHttpActionResult GetStudentsFromCourse(Guid courseId)
         {
             return Ok(this._studentsAppService.GetCourseStudents(courseId));
+        }
+
+        [HttpPost]
+        [Route("")]
+        public IHttpActionResult Post([FromBody]StudentResource studentResource)
+        {
+            var resource = this._studentsAppService.CreateStudent(studentResource);
+            return Ok(resource);
+        }
+
+        [HttpPut]
+        [Route("{studentId}")]
+        public IHttpActionResult Put(Guid studentId, [FromBody] StudentResource studentResource)
+        {
+            var resource = this._studentsAppService.UpdateStudent(studentResource);
+            return Ok(resource);
+        }
+
+        [HttpDelete]
+        [Route("{studentId}")]
+        public IHttpActionResult Delete(Guid studentId)
+        {
+            var resource = this._studentsAppService.DeleteStudent(studentId);
+            return Ok(resource);
         }
 
     }

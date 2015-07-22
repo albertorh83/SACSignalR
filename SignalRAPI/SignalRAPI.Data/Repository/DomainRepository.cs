@@ -49,6 +49,22 @@ namespace SignalRAPI.Data.Repository
             _coursesUnitOfWork.Entry<T>(entity).State = EntityState.Modified;
         }
 
+        public void Delete(T entity)
+        {
+            _coursesUnitOfWork.Entry<T>(entity).State = EntityState.Deleted;
+        }
+
+        public void Delete(Guid entityId)
+        {
+
+            T entity = GetSet().Find(entityId);
+
+            if (entity != null)
+            {
+                Delete(entity);
+            }
+        }
+
         public void SaveChanges()
         {
             this._coursesUnitOfWork.SaveChanges();

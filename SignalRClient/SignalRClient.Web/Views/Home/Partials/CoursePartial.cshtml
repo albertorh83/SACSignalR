@@ -5,6 +5,7 @@
 <div class="row">
     <div class="col-md-12">
         <h2 data-ng-bind="courseController.courseTitle"></h2>
+        <button class="btn btn-default" data-ng-click="courseController.createStudent()">Create</button>
         <p>
             <ul>
                 <li data-ng-repeat="student in courseController.students">

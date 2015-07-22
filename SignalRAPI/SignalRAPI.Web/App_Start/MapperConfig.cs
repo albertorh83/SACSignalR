@@ -15,7 +15,10 @@ namespace SignalRAPI.Web
         {
 
             Mapper.CreateMap<Course, CourseResource>();
+            Mapper.CreateMap<CourseResource, Course>();
+
             Mapper.CreateMap<Student, StudentResource>();
+            Mapper.CreateMap<StudentResource, Student>();
 
         }
     }

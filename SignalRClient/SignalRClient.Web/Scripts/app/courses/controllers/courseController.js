@@ -10,13 +10,17 @@
 
         var config = $.extend({}, defaultConfig, opts);
 
-        function controller($scope, courseModelService, studentsService) {
+        function controller($scope, $location, courseModelService, studentsService) {
 
             var vm = this;
 
             vm.title = 'SignalR - Sample application';
             vm.courseModel = courseModelService.get();
             vm.courseTitle = vm.courseModel.name;
+
+            vm.createStudent = function() {
+                $location.path('/' + vm.courseModel.courseId + '/Students/Create');
+            }
 
             studentsService
                 .getStudentsFromCourse(vm.courseModel.courseId)
@@ -27,7 +31,7 @@
         }
 
         app.controller(config.controllerName, controller);
-        controller.$inject = ['$scope', 'courseModelService', 'studentsService'];
+        controller.$inject = ['$scope', '$location', 'courseModelService', 'studentsService'];
 
     }
 
