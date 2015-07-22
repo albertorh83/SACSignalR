@@ -9,7 +9,9 @@
         <p>
             <ul>
                 <li data-ng-repeat="student in courseController.students">
-                    <span data-ng-bind="student.firstName"></span>
+                    <a data-ng-href="#/{{student.courseId}}/students/{{student.studentId}}">
+                        <span data-ng-bind="student.firstName"></span>&nbsp;<span data-ng-bind="student.lastName"></span>
+                    </a>
                 </li>
             </ul>
         </p>
