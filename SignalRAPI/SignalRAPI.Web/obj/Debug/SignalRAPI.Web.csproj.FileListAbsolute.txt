@@ -74,3 +74,6 @@ C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\obj\Debug\SignalRAP
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\obj\Debug\SignalRAPI.Web.pdb
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\SignalRAPI.Resources.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\SignalRAPI.Resources.pdb
+C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\System.Web.Cors.dll
+C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\System.Web.Http.Cors.dll
+C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\System.Web.Http.Cors.xml

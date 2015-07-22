@@ -15,7 +15,7 @@
             function getCourses() {
 
                 return $http.get(servicesUrl.signalRAPIUrl + 'api/courses')
-                    .success(function(response) {
+                    .then(function(response) {
                         return response.data;
                     })
                     .catch(function(error) {
