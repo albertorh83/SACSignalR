@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="IIS Web Application Name" description="" value="sergioacortes-001-subsite1" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\sergioacortes\\github\\SACSignalR\\SignalRAPI\\SignalRAPI\.Web\\obj\\Release\\Package\\PackageTmp$" />
-    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\sergioacortes\\github\\SACSignalR\\SignalRAPI\\SignalRAPI\.Web\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\sergioacortes\\GitHub\\SACSignalR\\SignalRAPI\\SignalRAPI\.Web\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\sergioacortes\\GitHub\\SACSignalR\\SignalRAPI\\SignalRAPI\.Web\\obj\\Release\\Package\\PackageTmp$" />
   </parameter>
-  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=SQL5016.Smarterasp.net;Initial Catalog=DB_9B2B0C_signalrsample;User ID=DB_9B2B0C_signalrsample_admin;Password=signalrsample" tags="">
-    <parameterEntry kind="XmlFile" scope="C:\\sergioacortes\\github\\SACSignalR\\SignalRAPI\\SignalRAPI\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=SQL5016.Smarterasp.net;Initial Catalog=DB_9B2B0C_signalrsample;Persist Security Info=True;User ID=DB_9B2B0C_signalrsample_admin;Password=signalrsample" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\sergioacortes\\GitHub\\SACSignalR\\SignalRAPI\\SignalRAPI\.Web\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
   </parameter>
 </parameters>

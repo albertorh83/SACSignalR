@@ -2,3 +2,4 @@ C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Resources\bin\Release\S
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Resources\bin\Release\SignalRAPI.Resources.pdb
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Resources\obj\Release\SignalRAPI.Resources.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Resources\obj\Release\SignalRAPI.Resources.pdb
+C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Resources\obj\Release\SignalRAPI.Resources.csprojResolveAssemblyReference.cache

@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section Scripts {
+
+    <script>
+
+        require([
+            './sta/bootstrapper'
+        ], function(bootstrapper) {
+
+            bootstrapper()
+                .then(function(runner) {
+
+                    require([
+                        'app/app'
+                    ], function(appBuilder) {
+
+                        var app = appBuilder({});
+
+                        app.config(['$routeProvider',
+                            function($routeProvider) {
+
+                                $routeProvider
+                                    .when('/', {
+                                        templateUrl: '@Url.Action("Index", "home", new { view = "CoursesPartial" })',
+                                        controller: 'CoursesController',
+                                        controllerAs: 'coursesController'
+                                    })
+                                    .otherwise({
+                                        redirectTo: '/'
+                                    });
+
+                            }
+                        ]);
+
+                        runner(app);
+
+                    });
+
+                });
+
+        });
+
+    </script>
+
+}
