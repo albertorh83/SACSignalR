@@ -5,12 +5,14 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Cors;
+using Microsoft.AspNet.SignalR;
 using SignalRAPI.AppServices.CoursesAppServices;
 using SignalRAPI.Data.Contexts;
 using SignalRAPI.Data.Repositories;
 using SignalRAPI.Data.UnitOfWorks;
 using SignalRAPI.Resources;
 using SignalRAPI.Web.Controllers.Helpers;
+using SignalRAPI.Web.Hubs;
 
 namespace SignalRAPI.Web.Controllers
 {
@@ -52,8 +54,14 @@ namespace SignalRAPI.Web.Controllers
         [Route("")]
         public IHttpActionResult Post([FromBody]StudentResource studentResource)
         {
+
             var resource = this._studentsAppService.CreateStudent(studentResource);
+
+            var studentsUpdateHub = GlobalHost.ConnectionManager.GetHubContext<StudentsUpdateHub>();
+            studentsUpdateHub.Clients.All.refreshStudents();
+
             return Ok(resource);
+        
         }
 
         [HttpPut]
