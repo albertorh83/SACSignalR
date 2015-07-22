@@ -11,8 +11,8 @@ namespace SignalRAPI.Web
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-            //var corsAttribute = new EnableCorsAttribute("*", "*", "*");
-            //config.EnableCors(corsAttribute);
+            // var corsAttribute = new EnableCorsAttribute("*", "*", "*");
+            // config.EnableCors(corsAttribute);
             config.EnableCors();
 
             // Web API routes

@@ -36,29 +36,43 @@
     
     <script src="~/Scripts/require.js"></script>
     <script>
-        require.config({
-            baseUrl: '@Url.Content("~/Scripts")',
-            paths: {
-                'jquery': 'jquery-1.10.2.min',
-                'angular': 'angular.min',
-                'ngRoute': 'angular-route.min',
-                'ngResource': 'angular-resource.min'
+    require.config({
+        baseUrl: '@Url.Content("~/Scripts")',
+        paths: {
+            'jquery': 'jquery-1.10.2.min',
+            'angular': 'angular.min',
+            'ngRoute': 'angular-route.min',
+            'ngResource': 'angular-resource.min',
+            'signalr.core': 'jquery.signalR-2.2.0.min'
+            // 'signalr.hubs': 'http://localhost:55150/signalr/hubs?'
+        },
+        shim: {
+            'jquery': {
+                exports: '$'
             },
-            shim: {
-                ngRoute: {
-                    deps: ['angular'],
-                    exports: 'angular'
-                },
-                ngResource: {
-                    deps: ['angular'],
-                    exports: 'angular'
-                },
-                angular: {
-                    exports: 'angular'
-                }
+            'angular': {
+                exports: 'angular'
+            },
+            'ngRoute': {
+                deps: ['angular'],
+                exports: 'angular'
+            },
+            'ngResource': {
+                deps: ['angular'],
+                exports: 'angular'
+            },
+            'signalr.core': {
+                deps: ['jquery'],
+                exports: '$.connection'
             }
-        });
+            //'signalr.hubs': {
+            //    deps: ['signalr.core']
+            //}
+        }
+    });
+
     </script>
+
     @RenderSection("scripts", required: false)
 </body>
 </html>
