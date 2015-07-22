@@ -10,26 +10,17 @@
 
         var config = $.extend({}, defaultConfig, opts);
 
-        function service($q, $http) {
+        function service($http, servicesUrl) {
 
             function getCourses() {
 
-                var defer = $q.defer();
-
-                defer.resolve([
-                    {
-                        courseId: '1',
-                        name: 'course name 1'
-                    }, {
-                        courseId: '2',
-                        name: 'course name 2'
-                    }, {
-                        courseId: '3',
-                        name: 'course name 3'
-                    }
-                ]);
-
-                return defer.promise;
+                return $http.get(servicesUrl.signalRAPIUrl + 'api/courses')
+                    .success(function(response) {
+                        return response.data;
+                    })
+                    .catch(function(error) {
+                        return error;
+                    });
 
             }
 
@@ -40,7 +31,7 @@
         }
 
         app.service(config.serviceName, service);
-        service.$inject = ['$q', '$http'];
+        service.$inject = ['$http', 'servicesUrl'];
 
     }
 
