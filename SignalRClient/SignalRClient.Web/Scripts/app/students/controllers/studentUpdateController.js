@@ -10,7 +10,7 @@
 
         var config = $.extend({}, defaultConfig, opts);
 
-        function controller($scope, studentModelService) {
+        function controller($scope, $location, studentsService, studentModelService) {
 
             var vm = this;
 
@@ -19,10 +19,18 @@
 
             vm.studentModel = studentModelService.get();
 
+            vm.updateStudent = function () {
+                studentsService
+                    .updateStudent(vm.studentModel)
+                    .then(function() {
+                        $location.path('/' + vm.studentModel.courseId + '/Students/' + vm.studentModel.studentId);
+                    });
+            }
+
         }
 
         app.controller(config.controllerName, controller);
-        controller.$inject = ['$scope', 'studentModelService'];
+        controller.$inject = ['$scope', '$location', 'studentsService', 'studentModelService'];
 
     }
 

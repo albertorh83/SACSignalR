@@ -34,9 +34,31 @@
                     });
             }
 
+            function updateStudent(student) {
+                return $http.put(servicesUrl.signalRAPIUrl + 'api/students/' + student.studentId, student)
+                    .then(function (response) {
+                        return response.data;
+                    })
+                    .catch(function (error) {
+                        return error;
+                    });
+            }
+
+            function deleteStudent(studentId) {
+                return $http.delete(servicesUrl.signalRAPIUrl + 'api/students/' + studentId)
+                    .then(function (response) {
+                        return response.data;
+                    })
+                    .catch(function (error) {
+                        return error;
+                    });
+            }
+
             return {
                 getStudentsFromCourse: getStudentsFromCourse,
-                createStudent: createStudent
+                createStudent: createStudent,
+                updateStudent: updateStudent,
+                deleteStudent: deleteStudent
             };
 
         }

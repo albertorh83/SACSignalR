@@ -1,10 +1,10 @@
 ﻿<div class="jumbotron">
-    <h1 data-ng-bind="studentCreateController.title"></h1>
+    <h1 data-ng-bind="studentController.title"></h1>
 </div>
 
 <div class="row">
     <div class="col-md-12">
-        <h2 data-ng-bind="studentCreateController.secondTitle"></h2>
+        <h2 data-ng-bind="studentController.secondTitle"></h2>
     </div>
 </div>
 
@@ -49,8 +49,8 @@
     <div class="col-md-3">
     </div>
     <div class="col-md-9">
-        <button class="btn btn-default">Editar</button>
-        <button class="btn btn-default">Cancelar</button>
-        <button class="btn btn-danger">Eliminar</button>
+        <button class="btn btn-default" data-ng-click="studentController.updateStudent()">Editar</button>
+        <button class="btn btn-default" data-ng-click="studentController.returnToList()">Cancelar</button>
+        <button class="btn btn-danger" data-ng-click="studentController.deleteStudent()">Eliminar</button>
     </div>
 </div>

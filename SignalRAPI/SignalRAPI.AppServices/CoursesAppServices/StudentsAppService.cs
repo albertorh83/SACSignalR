@@ -67,7 +67,7 @@ namespace SignalRAPI.AppServices.CoursesAppServices
         {
             var studentModel = this._studentsRepository.Get(studentId);
             this._studentsRepository.Delete(studentModel);
-
+            this._studentsRepository.SaveChanges();
             return AutoMapper.Mapper.Map<Student, StudentResource>(studentModel);
         }
 

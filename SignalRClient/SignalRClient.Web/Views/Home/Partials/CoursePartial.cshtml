@@ -5,11 +5,12 @@
 <div class="row">
     <div class="col-md-12">
         <h2 data-ng-bind="courseController.courseTitle"></h2>
+        <button class="btn btn-default" data-ng-click="courseController.returnToList()">Volver</button>
         <button class="btn btn-default" data-ng-click="courseController.createStudent()">Create</button>
         <p>
             <ul>
                 <li data-ng-repeat="student in courseController.students">
-                    <a data-ng-href="#/{{student.courseId}}/students/{{student.studentId}}">
+                    <a data-ng-href="#/{{student.courseId}}/Students/{{student.studentId}}" data-ng-click="courseController.setSelectedStudent(student)">
                         <span data-ng-bind="student.firstName"></span>&nbsp;<span data-ng-bind="student.lastName"></span>
                     </a>
                 </li>

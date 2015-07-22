@@ -10,7 +10,7 @@
 
         var config = $.extend({}, defaultConfig, opts);
 
-        function controller($scope, $location, courseModelService, studentsService) {
+        function controller($scope, $location, courseModelService, studentsService, studentModelService) {
 
             var vm = this;
 
@@ -18,8 +18,16 @@
             vm.courseModel = courseModelService.get();
             vm.courseTitle = vm.courseModel.name;
 
+            vm.returnToList = function () {
+                $location.path('/');
+            }
+
             vm.createStudent = function() {
                 $location.path('/' + vm.courseModel.courseId + '/Students/Create');
+            }
+
+            vm.setSelectedStudent = function(student) {
+                studentModelService.set(student);
             }
 
             studentsService
@@ -31,7 +39,7 @@
         }
 
         app.controller(config.controllerName, controller);
-        controller.$inject = ['$scope', '$location', 'courseModelService', 'studentsService'];
+        controller.$inject = ['$scope', '$location', 'courseModelService', 'studentsService', 'studentModelService'];
 
     }
 
