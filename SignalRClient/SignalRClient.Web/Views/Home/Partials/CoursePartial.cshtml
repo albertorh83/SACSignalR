@@ -1,0 +1,16 @@
+﻿<div class="jumbotron">
+    <h1 data-ng-bind="courseController.title"></h1>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2 data-ng-bind="courseController.courseTitle"></h2>
+        <p>
+            <ul>
+                <li data-ng-repeat="student in courseController.students">
+                    <span data-ng-bind="student.firstName"></span>
+                </li>
+            </ul>
+        </p>
+    </div>
+</div>

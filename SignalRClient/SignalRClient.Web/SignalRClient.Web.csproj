@@ -132,8 +132,11 @@
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\app\app.js" />
+    <Content Include="Scripts\app\courses\controllers\courseController.js" />
     <Content Include="Scripts\app\courses\controllers\coursesController.js" />
+    <Content Include="Scripts\app\courses\services\courseModelService.js" />
     <Content Include="Scripts\app\courses\services\coursesService.js" />
+    <Content Include="Scripts\app\students\services\studentsService.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
@@ -169,6 +172,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Partials\CoursesPartial.cshtml" />
+    <Content Include="Views\Home\Partials\CoursePartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -176,7 +180,6 @@
     <Folder Include="Scripts\app\courses\directives\" />
     <Folder Include="Scripts\app\students\controllers\" />
     <Folder Include="Scripts\app\students\directives\" />
-    <Folder Include="Scripts\app\students\services\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

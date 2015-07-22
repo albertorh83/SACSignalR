@@ -10,12 +10,16 @@
 
         var config = $.extend({}, defaultConfig, opts);
 
-        function controller($scope, coursesService) {
+        function controller($scope, coursesService, courseModelService) {
 
             var vm = this;
 
             vm.title = 'SignalR - Sample application';
             vm.coursesTitle = 'Courses';
+
+            vm.setSelectedCourse = function(course) {
+                courseModelService.set(course);
+            }
 
             coursesService
                 .getCourses()
@@ -26,7 +30,7 @@
         }
 
         app.controller(config.controllerName, controller);
-        controller.$inject = ['$scope', 'coursesService'];
+        controller.$inject = ['$scope', 'coursesService', 'courseModelService'];
 
     }
 

@@ -3,14 +3,21 @@
     'angular',
 
     './courses/services/coursesService',
+    './courses/services/courseModelService',
     './courses/controllers/coursesController',
+    './courses/controllers/courseController',
+
+    './students/services/studentsService',
 
     'ngRoute'
 ], function (
     $,
     angular,
     coursesService,
-    coursesController) {
+    courseModelService,
+    coursesController,
+    courseController,
+    studentsService) {
 
     var defaultConfig = {
         moduleName: 'SignalRClient'
@@ -26,7 +33,11 @@
         });
 
         coursesService(module, opts.coursesServiceOptions || {});
+        courseModelService(module, opts.courseModelServiceOptions || {});
         coursesController(module, opts.coursesControllerOptions || {});
+        courseController(module, opts.courseControllerOptions || {});
+
+        studentsService(module, opts.studentsServiceOptions || {});
 
         return module;
 

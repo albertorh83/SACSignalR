@@ -6,40 +6,46 @@
 
     <script>
 
-        require([
-            './sta/bootstrapper'
-        ], function(bootstrapper) {
+    require([
+        './sta/bootstrapper'
+    ], function (bootstrapper) {
 
-            bootstrapper()
-                .then(function(runner) {
+        bootstrapper()
+            .then(function (runner) {
 
-                    require([
-                        'app/app'
-                    ], function(appBuilder) {
+                require([
+                    'app/app'
+                ], function (appBuilder) {
 
-                        var app = appBuilder({});
+                    var app = appBuilder({});
 
-                        app.config(['$routeProvider',
-                            function($routeProvider) {
+                    app.config([
+                        '$routeProvider',
+                        function($routeProvider) {
 
-                                $routeProvider
-                                    .when('/', {
-                                        templateUrl: '@Url.Action("Index", "home", new { view = "CoursesPartial" })',
-                                        controller: 'CoursesController',
-                                        controllerAs: 'coursesController'
-                                    })
-                                    .otherwise({
-                                        redirectTo: '/'
-                                    });
+                            $routeProvider
+                                .when('/', {
+                                    templateUrl: '@Url.Action("Index", "home", new {view = "CoursesPartial"})',
+                                    controller: 'CoursesController',
+                                    controllerAs: 'coursesController'
+                                })
+                                .when('/:courseId', {
+                                    templateUrl: '@Url.Action("Index", "home", new { view = "CoursePartial" })',
+                                    controller: 'CourseController',
+                                    controllerAs: 'courseController'
+                                })
+                                .otherwise({
+                                    redirectTo: '/'
+                                });
 
-                            }
-                        ]);
+                        }
+                    ]);
 
-                        runner(app);
-
-                    });
+                    runner(app);
 
                 });
+
+            });
 
         });
 
