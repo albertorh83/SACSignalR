@@ -24,7 +24,7 @@ namespace SignalRAPI.AppServices.CoursesAppServices
 
         public List<CourseResource> GetCourses()
         {
-            var coursesModel = this._coursesRepository.Get().ToList();
+            var coursesModel = this._coursesRepository.Get().OrderBy(r => r.Name).ToList();
             var coursesResource = AutoMapper.Mapper.Map<List<Course>, List<CourseResource>>(coursesModel);
 
             return coursesResource;

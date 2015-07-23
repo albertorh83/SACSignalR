@@ -1,0 +1,16 @@
+﻿<div class="jumbotron">
+    <h1 data-ng-bind="coursesController.title"></h1>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2 data-ng-bind="coursesController.coursesTitle"></h2>
+        <p>
+            <ul>
+                <li data-ng-repeat="course in coursesController.courses">
+                    <a data-ng-click="coursesController.setSelectedCourse(course)" data-ng-href="#/{{course.courseId}}"><span data-ng-bind="course.name"></span></a>
+                </li>
+            </ul>
+        </p>
+    </div>
+</div>

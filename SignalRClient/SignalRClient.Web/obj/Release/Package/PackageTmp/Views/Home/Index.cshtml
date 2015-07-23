@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section Scripts {
+
+    <script>
+
+    require([
+        './sta/bootstrapper'
+    ], function (bootstrapper) {
+
+        bootstrapper()
+            .then(function (runner) {
+
+                require([
+                    'app/app'
+                ], function (appBuilder) {
+
+                    var app = appBuilder({});
+
+                    app.config([
+                        '$routeProvider',
+                        function ($routeProvider) {
+
+                            $routeProvider
+                                .when('/', {
+                                    templateUrl: '@Url.Action("Index", "home", new {view = "CoursesPartial"})',
+                                    controller: 'CoursesController',
+                                    controllerAs: 'coursesController'
+                                })
+                                .when('/:courseId', {
+                                    templateUrl: '@Url.Action("Index", "home", new { view = "CoursePartial" })',
+                                    controller: 'CourseController',
+                                    controllerAs: 'courseController'
+                                })
+                                .when('/:courseId/Students/Create', {
+                                    templateUrl: '@Url.Action("Index", "home", new { view = "StudentCreate" })',
+                                    controller: 'StudentCreateController',
+                                    controllerAs: 'studentCreateController'
+                                })
+                                .when('/:courseId/Students/:studentId', {
+                                    templateUrl: '@Url.Action("Index", "home", new { view = "Student" })',
+                                    controller: 'StudentController',
+                                    controllerAs: 'studentController'
+                                })
+                                .when('/:courseId/Students/:studentId/Update', {
+                                    templateUrl: '@Url.Action("Index", "home", new { view = "StudentUpdate" })',
+                                    controller: 'StudentUpdateController',
+                                    controllerAs: 'studentUpdateController'
+                                })
+                                .otherwise({
+                                    redirectTo: '/'
+                                });
+
+                        }
+                    ]);
+
+                    runner(app);
+
+                });
+
+            });
+
+        });
+
+    </script>
+
+}

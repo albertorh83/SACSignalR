@@ -7,3 +7,4 @@ C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data.Seedwork\bin\Debug
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data.Seedwork\bin\Debug\EntityFramework.SqlServer.xml
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data.Seedwork\obj\Debug\SignalRAPI.Data.Seedwork.dll
 C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Data.Seedwork\obj\Debug\SignalRAPI.Data.Seedwork.pdb
+C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Data.Seedwork\obj\Debug\SignalRAPI.Data.Seedwork.csprojResolveAssemblyReference.cache

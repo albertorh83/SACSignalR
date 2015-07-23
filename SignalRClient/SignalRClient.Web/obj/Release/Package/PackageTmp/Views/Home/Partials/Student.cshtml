@@ -1,0 +1,56 @@
+﻿<div class="jumbotron">
+    <h1 data-ng-bind="studentController.title"></h1>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2 data-ng-bind="studentController.secondTitle"></h2>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-3">
+        <label for="firstName">First name</label>
+    </div>
+    <div class="col-md-9">
+        <label name="firstName" data-ng-bind="studentController.studentModel.firstName"></label>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <label for="middleName">Middle name</label>
+    </div>
+    <div class="col-md-9">
+        <label name="firstName" data-ng-bind="studentController.studentModel.middleName"></label>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <label for="lastName">Last name</label>
+    </div>
+    <div class="col-md-9">
+        <label name="firstName" data-ng-bind="studentController.studentModel.lastName"></label>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <label for="alias">Alias</label>
+    </div>
+    <div class="col-md-9">
+        <label name="firstName" data-ng-bind="studentController.studentModel.alias"></label>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-9">
+        <button class="btn btn-default" data-ng-click="studentController.updateStudent()">Editar</button>
+        <button class="btn btn-default" data-ng-click="studentController.returnToList()">Cancelar</button>
+        <button class="btn btn-danger" data-ng-click="studentController.deleteStudent()">Eliminar</button>
+    </div>
+</div>
