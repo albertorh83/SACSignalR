@@ -77,3 +77,9 @@ C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\SignalRAPI.Reso
 C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\System.Web.Cors.dll
 C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\System.Web.Http.Cors.dll
 C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\System.Web.Http.Cors.xml
+C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\Microsoft.Owin.Cors.dll
+C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Web\bin\Microsoft.Owin.Cors.xml

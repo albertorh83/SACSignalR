@@ -1,6 +1,6 @@
 ﻿define([
     'jquery',
-    'signalr.core'
+    'signalr.hubs'
 ], function ($) {
 
     var defaultConfig = {
@@ -14,11 +14,6 @@
         function controller($scope, $location, servicesUrl, courseModelService, studentsService, studentModelService) {
 
             var vm = this;
-
-            // var connection = $.connection(servicesUrl.signalRAPIUrl);
-            // var studentsUpdateHub = connection('studentUpdateHub');
-            var connection = $.hubConnection(servicesUrl.signalRAPIUrl + 'signalr', { useDefaultPath: false });
-            var studentsUpdateHub = connection.createHubProxy('StudentsUpdateHub');
 
             vm.title = 'SignalR - Sample application';
             vm.courseModel = courseModelService.get();
@@ -46,18 +41,33 @@
 
             refreshStudents();
 
-            studentsUpdateHub.on('refreshStudents', function () {
+            var studentsUpdateHub = $.connection.studentsUpdateHub;
+
+            studentsUpdateHub.client.refreshStudents = function () {
                 refreshStudents();
+            }
+
+            $.connection.hub.start({
+                transport: 'auto'
+            }, function() {
+                alert('Connection started');
             });
 
-            connection
-                .start({
-                    jsonp: true,
-                    withCredentials: false
-                })
-                .done(function() {
-                    alert('connection started');
-                });
+            // var connection = $.hubConnection(servicesUrl.signalRAPIUrl + 'signalr', { useDefaultPath: false });
+            // var studentsUpdateHub = connection.createHubProxy('StudentsUpdateHub');
+
+            //studentsUpdateHub.on('refreshStudents', function () {
+            //    refreshStudents();
+            //});
+
+            //connection
+            //    .start({
+            //        jsonp: true,
+            //        withCredentials: false
+            //    })
+            //    .done(function() {
+            //        alert('connection started');
+            //    });
 
         }
 
