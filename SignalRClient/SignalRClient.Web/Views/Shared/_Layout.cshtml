@@ -43,8 +43,8 @@
             'angular': 'angular.min',
             'ngRoute': 'angular-route.min',
             'ngResource': 'angular-resource.min',
-            'signalr.core': 'jquery.signalR-2.2.0.min',
-            'signalr.hubs': 'http://signalrapi.sergioacortes.com/signalr/hubs?'
+            'signalr.core': 'jquery.signalR-2.2.0.min'
+            // 'signalr.hubs': 'http://localhost:54698/signalr/hubs?'
         },
         shim: {
             'jquery': {
@@ -65,10 +65,10 @@
             'signalr.core': {
                 deps: ['jquery'],
                 exports: '$.connection'
-            },
-            'signalr.hubs': {
-                deps: ['signalr.core']
             }
+            //'signalr.hubs': {
+            //    deps: ['signalr.core']
+            //}
         }
     });
 

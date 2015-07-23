@@ -19,8 +19,6 @@
 
         var defer = $.Deferred();
 
-        $.support.cors = true;
-
         config = $.extend({}, defaultConfig, opts);
         defer.resolve(builder);
 

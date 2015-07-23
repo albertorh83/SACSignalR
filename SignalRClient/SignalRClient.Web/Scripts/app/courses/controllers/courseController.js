@@ -1,6 +1,5 @@
 ﻿define([
-    'jquery',
-    'signalr.hubs'
+    'jquery'
 ], function ($) {
 
     var defaultConfig = {
@@ -40,34 +39,6 @@
             }
 
             refreshStudents();
-
-            var studentsUpdateHub = $.connection.studentsUpdateHub;
-
-            studentsUpdateHub.client.refreshStudents = function () {
-                refreshStudents();
-            }
-
-            $.connection.hub.start({
-                transport: 'auto'
-            }, function() {
-                alert('Connection started');
-            });
-
-            // var connection = $.hubConnection(servicesUrl.signalRAPIUrl + 'signalr', { useDefaultPath: false });
-            // var studentsUpdateHub = connection.createHubProxy('StudentsUpdateHub');
-
-            //studentsUpdateHub.on('refreshStudents', function () {
-            //    refreshStudents();
-            //});
-
-            //connection
-            //    .start({
-            //        jsonp: true,
-            //        withCredentials: false
-            //    })
-            //    .done(function() {
-            //        alert('connection started');
-            //    });
 
         }
 

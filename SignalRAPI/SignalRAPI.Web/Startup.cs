@@ -13,7 +13,6 @@ namespace SignalRAPI.Web
         public void Configuration(IAppBuilder app)
         {
 
-
             app.Map("/signalr", map =>
             {
 
