@@ -39,8 +39,8 @@
         var module = angular.module(config.moduleName, ['ngRoute']);
 
         module.constant('servicesUrl', {
-            // signalRAPIUrl: 'http://localhost:55150/'            
-            signalRAPIUrl: 'http://signalrapi.sergioacortes.com/'
+            signalRAPIUrl: 'http://localhost:55150/'            
+            //signalRAPIUrl: 'http://signalrapi.sergioacortes.com/'
         });
 
         coursesService(module, opts.coursesServiceOptions || {});

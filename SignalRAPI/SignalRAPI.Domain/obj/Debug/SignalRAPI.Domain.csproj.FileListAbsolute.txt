@@ -1,5 +1,5 @@
-C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Domain\bin\Debug\SignalRAPI.Domain.dll
-C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Domain\bin\Debug\SignalRAPI.Domain.pdb
-C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Domain\obj\Debug\SignalRAPI.Domain.csprojResolveAssemblyReference.cache
-C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Domain\obj\Debug\SignalRAPI.Domain.dll
-C:\sergioacortes\GitHub\SACSignalR\SignalRAPI\SignalRAPI.Domain\obj\Debug\SignalRAPI.Domain.pdb
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Domain\bin\Debug\SignalRAPI.Domain.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Domain\bin\Debug\SignalRAPI.Domain.pdb
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Domain\obj\Debug\SignalRAPI.Domain.csprojResolveAssemblyReference.cache
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Domain\obj\Debug\SignalRAPI.Domain.dll
+C:\sergioacortes\github\SACSignalR\SignalRAPI\SignalRAPI.Domain\obj\Debug\SignalRAPI.Domain.pdb

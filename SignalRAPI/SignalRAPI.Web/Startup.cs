@@ -19,14 +19,14 @@ namespace SignalRAPI.Web
                 var corsPolicy = new CorsPolicy
                 {
                     AllowAnyHeader = true,
-                    AllowAnyMethod = true
+                    AllowAnyMethod = true,
+                    AllowAnyOrigin = true
                 };
 
-                corsPolicy.AllowAnyOrigin = true;
                 corsPolicy.AllowAnyHeader = true;
                 corsPolicy.AllowAnyMethod = true;
                 corsPolicy.SupportsCredentials = true;
-                
+
                 map.UseCors(new CorsOptions
                 {
                     PolicyProvider = new CorsPolicyProvider
@@ -37,11 +37,11 @@ namespace SignalRAPI.Web
 
                 map.RunSignalR(new HubConfiguration()
                 {
-                    EnableJSONP = true
+                    EnableJSONP = true, 
+                    EnableJavaScriptProxies = true
                 });
 
             });
-
 
             ConfigureAuth(app);
 

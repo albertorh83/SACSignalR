@@ -1,5 +1,6 @@
 ﻿define([
-    'jquery'
+    'jquery',
+    'signalr.hubs'
 ], function ($) {
 
     var defaultConfig = {
@@ -39,6 +40,23 @@
             }
 
             refreshStudents();
+
+            $.connection.hub.url = servicesUrl.signalRAPIUrl + 'signalr';
+            var myHub = $.connection.studentsUpdateHub;
+
+            myHub.client.refreshStudents = function () {
+                refreshStudents();
+            }
+
+            $.connection
+                .hub
+                .start()
+                .done(function () {
+                    console.log('connection stablished');
+                })
+                .fail(function(error) {
+                    console.log(error.message);
+                });
 
         }
 

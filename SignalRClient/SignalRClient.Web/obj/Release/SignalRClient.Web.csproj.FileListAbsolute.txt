@@ -23,3 +23,4 @@ C:\sergioacortes\GitHub\SACSignalR\SignalRClient\SignalRClient.Web\bin\Antlr3.Ru
 C:\sergioacortes\GitHub\SACSignalR\SignalRClient\SignalRClient.Web\bin\Newtonsoft.Json.xml
 C:\sergioacortes\GitHub\SACSignalR\SignalRClient\SignalRClient.Web\obj\Release\SignalRClient.Web.dll
 C:\sergioacortes\GitHub\SACSignalR\SignalRClient\SignalRClient.Web\obj\Release\SignalRClient.Web.pdb
+C:\sergioacortes\github\SACSignalR\SignalRClient\SignalRClient.Web\obj\Release\SignalRClient.Web.csprojResolveAssemblyReference.cache

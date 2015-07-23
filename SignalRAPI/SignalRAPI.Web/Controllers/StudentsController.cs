@@ -68,16 +68,28 @@ namespace SignalRAPI.Web.Controllers
         [Route("{studentId}")]
         public IHttpActionResult Put(Guid studentId, [FromBody] StudentResource studentResource)
         {
+
             var resource = this._studentsAppService.UpdateStudent(studentResource);
+
+            var studentsUpdateHub = GlobalHost.ConnectionManager.GetHubContext<StudentsUpdateHub>();
+            studentsUpdateHub.Clients.All.refreshStudents();
+            
             return Ok(resource);
+        
         }
 
         [HttpDelete]
         [Route("{studentId}")]
         public IHttpActionResult Delete(Guid studentId)
         {
+
             var resource = this._studentsAppService.DeleteStudent(studentId);
+
+            var studentsUpdateHub = GlobalHost.ConnectionManager.GetHubContext<StudentsUpdateHub>();
+            studentsUpdateHub.Clients.All.refreshStudents();
+
             return Ok(resource);
+        
         }
 
     }
