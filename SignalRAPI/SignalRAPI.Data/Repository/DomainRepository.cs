@@ -13,7 +13,7 @@ using SignalRAPI.Data.UnitOfWorks;
 namespace SignalRAPI.Data.Repository
 {
 
-    public class DomainRepository<T> : IDomainRepository<T> where T : class
+    public abstract class DomainRepository<T> : IDomainRepository<T> where T : class
     {
 
         private readonly IQueryableUnitOfWork _coursesUnitOfWork;
