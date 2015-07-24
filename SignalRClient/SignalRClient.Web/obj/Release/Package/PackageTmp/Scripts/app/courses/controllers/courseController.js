@@ -1,6 +1,5 @@
 ﻿define([
-    'jquery',
-    'signalr.hubs'
+    'jquery'
 ], function ($) {
 
     var defaultConfig = {
@@ -11,7 +10,7 @@
 
         var config = $.extend({}, defaultConfig, opts);
 
-        function controller($scope, $location, servicesUrl, courseModelService, studentsService, studentModelService) {
+        function controller($scope, $location, servicesUrl, signalrHubProxyFactory, courseModelService, studentsService, studentModelService) {
 
             var vm = this;
 
@@ -41,27 +40,18 @@
 
             refreshStudents();
 
-            $.connection.hub.url = servicesUrl.signalRAPIUrl + 'signalr';
-            var myHub = $.connection.studentsUpdateHub;
-
-            myHub.client.refreshStudents = function () {
+            var studentsHubProxy = signalrHubProxyFactory(servicesUrl.signalrEndPoing, 'studentsUpdateHub');
+            
+            studentsHubProxy.on('refreshStudents', function (data) {
                 refreshStudents();
-            }
+            });
 
-            $.connection
-                .hub
-                .start()
-                .done(function () {
-                    console.log('connection stablished');
-                })
-                .fail(function(error) {
-                    console.log(error.message);
-                });
+            studentsHubProxy.start({});
 
         }
 
         app.controller(config.controllerName, controller);
-        controller.$inject = ['$scope', '$location', 'servicesUrl', 'courseModelService', 'studentsService', 'studentModelService'];
+        controller.$inject = ['$scope', '$location', 'servicesUrl', 'signalrHubProxyFactory', 'courseModelService', 'studentsService', 'studentModelService'];
 
     }
 

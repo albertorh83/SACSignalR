@@ -1,17 +1,36 @@
-﻿define(['jquery'], function ($) {
+﻿define([
+    'jquery'
+], function($) {
 
     var defaultConfig = {
-        appSelector: '.jsApp'
-    },
+            appSelector: '.jsApp'
+        },
         config = {};
 
     function builder(app) {
 
-        var $element = angular.element(config.appSelector);
+        var deferred = $.Deferred();
 
-        if ($element && $element.length > 0) {
-            angular.bootstrap($element, [app.name]);
-        }
+        require([
+            'sta/staModule'
+        ], function(staModuleBuilder) {
+
+            var staModule = staModuleBuilder(config.staModuleConfig || {});
+            var $element = angular.element(config.appSelector);
+
+            if ($element && $element.length > 0) {
+                angular.bootstrap($element, [
+                    app.name,
+                    staModule.name
+                ]);
+                deferred.resolve(app);
+            } else {
+                deferred.reject('There is no application container, add the jsApp class to an application container');
+            }
+
+        });
+
+        return deferred.promise();
 
     }
 

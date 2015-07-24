@@ -30,7 +30,7 @@
         }
 
         app.service(config.serviceName, service);
-        service.$inject = ['$http', 'servicesUrl'];
+        service.$inject = [];
 
     }
 

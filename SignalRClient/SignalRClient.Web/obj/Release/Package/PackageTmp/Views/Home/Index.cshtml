@@ -6,46 +6,53 @@
 
     <script>
 
-    require([
-        './sta/bootstrapper'
-    ], function (bootstrapper) {
+        require([
+            'sta/bootstrapper'
+        ], function(bootstrapper) {
 
-        bootstrapper()
-            .then(function (runner) {
+            bootstrapper({
+                    staModuleConfig: {
+                        servicesUrl: {
+                            webApiEndPoint: 'http://signalrapi.sergioacortes.com/',
+                            signalrEndPoing: 'http://signalrapi.sergioacortes.com/'
+                        }
+                    }
+                })
+                .then(function(runner) {
 
-                require([
-                    'app/app'
-                ], function (appBuilder) {
+                    require([
+                        'app/app'
+                    ], function(appBuilder) {
 
-                    var app = appBuilder({});
+                        var app = appBuilder({});
 
-                    app.config([
-                        '$routeProvider',
-                        function ($routeProvider) {
+                        app.config([
+                            '$routeProvider',
+                            function($routeProvider) {
 
-                            $routeProvider
-                                .when('/', {
-                                    templateUrl: '@Url.Action("Index", "home", new {view = "CoursesPartial"})',
-                                    controller: 'CoursesController',
-                                    controllerAs: 'coursesController'
-                                })
-                                .when('/:courseId', {
-                                    templateUrl: '@Url.Action("Index", "home", new { view = "CoursePartial" })',
-                                    controller: 'CourseController',
-                                    controllerAs: 'courseController'
-                                })
-                                .when('/:courseId/Students/Create', {
-                                    templateUrl: '@Url.Action("Index", "home", new { view = "StudentCreate" })',
-                                    controller: 'StudentCreateController',
-                                    controllerAs: 'studentCreateController'
-                                })
-                                .when('/:courseId/Students/:studentId', {
-                                    templateUrl: '@Url.Action("Index", "home", new { view = "Student" })',
-                                    controller: 'StudentController',
-                                    controllerAs: 'studentController'
-                                })
-                                .when('/:courseId/Students/:studentId/Update', {
-                                    templateUrl: '@Url.Action("Index", "home", new { view = "StudentUpdate" })',
+                                $routeProvider
+                                    .when('/', {
+                                        templateUrl: '@Url.Action("Index", "home", new {view = "CoursesPartial"})',
+                                        controller: 'CoursesController',
+                                        controllerAs: 'coursesController'
+                                    })
+                                    .when('/:courseId', {
+                                        templateUrl: '@Url.Action("Index", "home", new {view = "CoursePartial"})',
+                                        controller: 'CourseController',
+                                        controllerAs: 'courseController'
+                                    })
+                                    .when('/:courseId/Students/Create', {
+                                        templateUrl: '@Url.Action("Index", "home", new {view = "StudentCreate"})',
+                                        controller: 'StudentCreateController',
+                                        controllerAs: 'studentCreateController'
+                                    })
+                                    .when('/:courseId/Students/:studentId', {
+                                        templateUrl: '@Url.Action("Index", "home", new {view = "Student"})',
+                                        controller: 'StudentController',
+                                        controllerAs: 'studentController'
+                                    })
+                                    .when('/:courseId/Students/:studentId/Update', {
+                                        templateUrl: '@Url.Action("Index", "home", new {view = "StudentUpdate"})',
                                     controller: 'StudentUpdateController',
                                     controllerAs: 'studentUpdateController'
                                 })
@@ -56,7 +63,10 @@
                         }
                     ]);
 
-                    runner(app);
+                    runner(app)
+                        .then(function(module) {
+                            console.log('the application ' + module.name + ' is now runing');
+                        });
 
                 });
 
