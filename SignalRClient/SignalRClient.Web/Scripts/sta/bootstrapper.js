@@ -1,6 +1,9 @@
 ﻿define([
-    'jquery'
-], function($) {
+    'jquery',
+    './staModule'
+], function (
+    $, 
+    staModuleBuilder) {
 
     var defaultConfig = {
             appSelector: '.jsApp'
@@ -10,25 +13,22 @@
     function builder(app) {
 
         var deferred = $.Deferred();
+        var $element = angular.element(config.appSelector);
 
-        require([
-            'sta/staModule'
-        ], function(staModuleBuilder) {
+        if ($element && $element.length > 0) {
 
             var staModule = staModuleBuilder(config.staModuleConfig || {});
-            var $element = angular.element(config.appSelector);
 
-            if ($element && $element.length > 0) {
-                angular.bootstrap($element, [
-                    app.name,
-                    staModule.name
-                ]);
-                deferred.resolve(app);
-            } else {
-                deferred.reject('There is no application container, add the jsApp class to an application container');
-            }
+            angular.bootstrap($element, [
+                app.name,
+                staModule.name
+            ]);
 
-        });
+            deferred.resolve(app);
+
+        } else {
+            deferred.reject('There is no application container, add the jsApp class to an application container');
+        }
 
         return deferred.promise();
 
