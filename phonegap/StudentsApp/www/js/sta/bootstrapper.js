@@ -1,7 +1,11 @@
 define([
     'jquery',
-    'ionic.angular'
-], function($, angular) {
+    'ionic.angular', 
+	'./staModule'
+], function(
+	$, 
+	angular, 
+	staModuleBuilder) {
 
     var defaultConfig = {
             elementSelector: '.jsApp'
@@ -10,11 +14,25 @@ define([
 
     function appRunner(app) {
 
+		var deferred = $.Deferred();
         var $element = angular.element(config.elementSelector);
 
-        if ($element && $element.length > 0) {
-        	angular.bootstrap($element, [app.name]);
+		if ($element && $element.length > 0) {
+
+            var staModule = staModuleBuilder(config.staModuleConfig || {});
+
+            angular.bootstrap($element, [
+                app.name,
+                staModule.name
+            ]);
+
+            deferred.resolve(app);
+
+        } else {
+            deferred.reject('There is no application container, add the jsApp class to an application container');
         }
+		
+		return deferred.promise();
 
     }
 

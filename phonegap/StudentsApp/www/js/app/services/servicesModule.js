@@ -20,10 +20,6 @@ define([
         var config = $.extend({}, defaultConfig, opts);
         var app = angular.module(defaultConfig.moduleName, []);
 
-        app.constant('servicesUrl', {
-            signalRAPIUrl: 'http://signalrapi.sergioacortes.com/'
-        });
-
         coursesService(app, config.coursesServiceConfig || {});
         studentsService(app, config.studentsServiceConfig || {});
         chatsService(app, config.chatsServiceConfig || {});

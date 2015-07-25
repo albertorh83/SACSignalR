@@ -14,7 +14,7 @@ define([
 
             function getCourses() {
 
-                return $http.get(servicesUrl.signalRAPIUrl + 'api/courses')
+                return $http.get(servicesUrl.webApiEndPoint + 'api/courses')
                     .then(function(response) {
                         return response.data;
                     })

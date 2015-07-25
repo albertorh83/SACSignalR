@@ -37,12 +37,17 @@
           baseUrl: 'js', 
           paths: {
             'jquery': '../lib/jquery/jquery-1.10.2.min',
+			'signalr.core': '../lib/signalr/jquery.signalR-2.1.2.min',
             'ionic.angular': '../lib/ionic/js/ionic.bundle'
           }, 
           shim: {
             'jquery': {
                 exports: '$'
             },
+            'signalr.core': {
+                deps: ['jquery'],
+                exports: '$.connection'
+            }			,
             'ionic.angular': {
                 exports: 'angular'
             }
@@ -55,7 +60,14 @@
         'sta/bootstrapper'
       ], function (bootstrapper) { 
 
-        bootstrapper({})
+        bootstrapper({
+			staModuleConfig: {
+				servicesUrl: {
+					webApiEndPoint: 'http://signalrapi.sergioacortes.com/',
+					signalrEndPoing: 'http://signalrapi.sergioacortes.com/'
+				}
+			}
+		})
         .then(function(loader){
             
             require([

@@ -14,7 +14,7 @@ define([
 
             function getStudentsFromCourse(courseId) {
 
-                return $http.get(servicesUrl.signalRAPIUrl + 'api/students/courses/' + courseId)
+                return $http.get(servicesUrl.webApiEndPoint + 'api/students/courses/' + courseId)
                     .then(function(response) {
                         return response.data;
                     })
@@ -25,7 +25,7 @@ define([
             }
 
             function createStudent(student) {
-                return $http.post(servicesUrl.signalRAPIUrl + 'api/students', student)
+                return $http.post(servicesUrl.webApiEndPoint + 'api/students', student)
                     .then(function(response) {
                         return response.data;
                     })
@@ -35,7 +35,7 @@ define([
             }
 
             function updateStudent(student) {
-                return $http.put(servicesUrl.signalRAPIUrl + 'api/students/' + student.studentId, student)
+                return $http.put(servicesUrl.webApiEndPoint + 'api/students/' + student.studentId, student)
                     .then(function(response) {
                         return response.data;
                     })
@@ -45,7 +45,7 @@ define([
             }
 
             function deleteStudent(studentId) {
-                return $http.delete(servicesUrl.signalRAPIUrl + 'api/students/' + studentId)
+                return $http.delete(servicesUrl.webApiEndPoint + 'api/students/' + studentId)
                     .then(function(response) {
                         return response.data;
                     })
